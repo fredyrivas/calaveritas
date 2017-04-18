@@ -1,0 +1,128 @@
+/*IPHONE-----------------------------------------------------------------------------------------------*/
+
+@include iphone {
+
+  .calaverizzimas-logo{
+    img{
+      width: 240px !important;
+    }
+  }
+
+
+  .izzi-logo-circle{
+    img{
+      width: 100px;
+    }
+  }
+
+  .skull-init{
+    img{
+      width: 140px;
+    }
+  }
+
+
+  #a-screen{
+    .myriad{
+      /*padding: 0 10px !important;*/
+    }
+
+    .row{
+      margin-top: -35px !important;
+    }
+  }
+
+  #b-screen{
+    .calaca-slide{
+      width: 100% !important;
+    }
+
+    .opcion-calavera{
+      width: 120px !important;
+    }
+
+    .myriad{
+      padding: 0 10px !important;
+    }
+
+    .calaveras-navigation{
+      margin-top: -50px !important;
+    }
+    .arrows-container{
+      width: 100% !important;
+    }
+  }
+
+  #inputusername{
+    font-size: 1rem;
+    height: 1.7rem !important;
+  }
+
+  .guardar-btn, .hazotra-btn {
+    font-size: 1rem;
+  }
+
+
+  .big-calaca{
+    width: 310px !important;
+  }
+
+  .instrucciones-size{
+    font-size: 1rem !important;
+    line-height: 1.2rem !important;
+  }
+  .normal-size{
+    font-size: .8rem !important;
+    line-height: .9rem !important;
+  }
+
+}
+
+/*MINI TABLET-----------------------------------------------------------------------------------------------*/
+@include minitablet {
+
+  .instrucciones-size{
+    font-size: 1.1rem !important;
+  }
+
+  .normal-size{
+    font-size: .8rem !important;
+  }
+
+}
+
+/*TABLET-----------------------------------------------------------------------------------------------*/
+@include tablet {
+  .instrucciones-size{
+    font-size: 1.2rem !important;
+  }
+
+  .normal-size{
+    font-size: .8rem !important;
+  }
+}
+
+/*DESKTOP-----------------------------------------------------------------------------------------------*/
+@include desktop {
+
+
+
+}
+
+/*LARGER-----------------------------------------------------------------------------------------------*/
+@include larger {
+
+  .constant-margin{
+    margin-top: 30px !important;
+  }
+
+  .skull-init {
+    img {
+      width: 200px !important;
+    }
+  }
+
+}
+
+
+

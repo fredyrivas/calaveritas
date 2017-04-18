@@ -1,0 +1,551 @@
+
+body {
+
+}
+
+html, body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'american';
+  src: url('../fonts/american-typewriter-regular.ttf');
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+circle:hover {
+  cursor: pointer;
+}
+
+path:hover {
+  cursor: pointer;
+}
+
+circle, path {
+  pointer-events: all;
+}
+
+.margin-less-comp {
+  margin-top: -80px;
+}
+
+.no-event {
+  pointer-events: none;
+}
+
+.myriad {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+
+
+.constant-margin {
+  margin-top: 15px;
+}
+
+.color-arena {
+  color: #f2ecd0;
+}
+
+.izzi-logo-circle {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  img {
+    width: 180px;
+  }
+}
+
+
+
+.instru-number{
+  min-height: 50px;
+}
+
+.calaverizzimas-logo {
+  img {
+    width: 320px;
+  }
+}
+
+.big-calaca {
+  width: 500px;
+  @include absolute-center;
+}
+
+.flor-abs {
+  position: absolute;
+  @include horizontal-center;
+}
+
+.flor-a-1, .flor-b-1, .flor-c-1, .flor-d-1, .flor-e-1 {
+  margin-left: -350px;
+}
+
+.flor-a-2, .flor-b-2, .flor-c-2, .flor-d-2, .flor-e-2 {
+  margin-left: -550px;
+}
+
+.flor-a-3, .flor-b-3, .flor-c-3, .flor-d-3, .flor-e-3 {
+  margin-left: -390px;
+}
+
+.flor-a-4, .flor-b-4, .flor-c-4, .flor-d-4, .flor-e-4 {
+  margin-left: 350px;
+}
+
+.flor-a-5, .flor-b-5, .flor-c-5, .flor-d-5, .flor-e-5 {
+  margin-left: 550px;
+}
+
+.flor-a-6, .flor-b-6, .flor-c-6, .flor-d-6, .flor-e-6 {
+  margin-left: 390px;
+}
+
+.flor-size-1 img {
+  width: 170px;
+  max-width: none;
+}
+
+.flor-size-2 img {
+  width: 220px;
+  max-width: none;
+}
+
+.flor-size-3 img {
+  width: 180px;
+  max-width: none;
+}
+
+.skulcito-a-1, .skulcito-b-1, .skulcito-c-1, .skulcito-d-1, .skulcito-e-1 {
+  margin-left: -580px;
+}
+
+.skulcito-a-2, .skulcito-b-2, .skulcito-c-2, .skulcito-d-2, .skulcito-e-2 {
+  margin-left: -330px;
+}
+
+.skulcito-a-3, .skulcito-b-3, .skulcito-c-3, .skulcito-d-3, .skulcito-e-3 {
+  margin-left: -580px;
+}
+
+.skulcito-a-4, .skulcito-b-4, .skulcito-c-4, .skulcito-d-4, .skulcito-e-4 {
+  margin-left: 580px;
+}
+
+.skulcito-a-5, .skulcito-b-5, .skulcito-c-5, .skulcito-d-5, .skulcito-e-5 {
+  margin-left: 330px;
+}
+
+.skulcito-a-6, .skulcito-b-6, .skulcito-c-6, .skulcito-d-6, .skulcito-e-6 {
+  margin-left: 580px;
+}
+
+.skulcito-size img {
+  width: 40px;
+  max-width: none;
+}
+
+.skulcito-abs {
+  position: absolute;
+  @include horizontal-center;
+}
+
+/* /////////////////////////////////////////////// aaaaaa screen //////// */
+
+
+
+#a-screen {
+  background-color: #ff00c6;
+  background-repeat: repeat-x;
+  background-image: url("../images/picado-a.svg");
+  background-position: center bottom;
+  background-size: 109px 40px;
+}
+
+
+.instrucciones-size{
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+}
+.normal-size{
+  font-size: .9rem;
+  line-height: normal;
+}
+
+
+.skull-init {
+  img {
+    width: 150px;
+  }
+}
+
+#a-screen{
+  .controlsWrapperRow {
+    .controlsWrapper {
+      position: absolute;
+      width: 50px;
+    }
+  }
+}
+
+#d-screen{
+  .controlsWrapperRow {
+    .controlsWrapper {
+      position: absolute;
+      width: 50px;
+    }
+  }
+}
+
+.controlsWrapperRow {
+  /*background-color: #2199e8;*/
+
+  .controlsWrapper {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    /*background-color: rgba(126, 232, 84, 0.83);*/
+    top: 0;
+    @include horizontal-center;
+
+    .down-arrow {
+      /*background-color: #00C1B5;*/
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 0;
+      right: 0;
+
+      .down-arrow-hs {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        /*background-color: rgba(126, 232, 84, 0.83);*/
+        top: 0;
+        left: 0;
+        cursor: pointer;
+      }
+    }
+    .up-arrow {
+      /*background-color: #1b5bc1;*/
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 0;
+      left: 0;
+
+      .up-arrow-hs {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        /*background-color: rgba(126, 232, 84, 0.83);*/
+        top: 0;
+        left: 0;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+/* /////////////////////////////////////////////// bbbbbbb screen //////// */
+
+#b-screen {
+  background-color: #ff9c2a;
+  background-repeat: repeat-x;
+  background-image: url("../images/picado-b.svg");
+  background-position: center bottom;
+  background-size: 109px 40px;
+
+  .big-calaca {
+    opacity: .7;
+  }
+  .skulcito-size {
+    opacity: .7;
+  }
+}
+
+
+.opcion-calavera {
+  width: 180px;
+}
+
+.calaca-slide {
+  width: 400px;
+  margin: 0 auto;
+
+  div img {
+    margin: 0 auto;
+  }
+}
+
+.calaveras-navigation {
+  position: absolute;
+  /*background-color: rgba(12, 77, 120, 0.59);*/
+  height: 50px;
+  width: 100%;
+  left: 0;
+  @include vertical-center;
+
+  .arrows-container {
+    /*background-color: rgba(46, 120, 36, 0.76);*/
+    width: 400px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    .arrow-left {
+      position: absolute;
+      left: 0;
+      width: 50px;
+      height: 100%;
+      pointer-events: auto;
+    }
+    .arrow-right {
+      position: absolute;
+      right: 0;
+      width: 50px;
+      height: 100%;
+      pointer-events: auto;
+    }
+  }
+}
+
+.arrowSides-hs {
+  position: absolute;
+  width: 50px;
+  height: 44px;
+  /*background-color: rgba(232, 128, 51, 0.83);*/
+  top: 0;
+  cursor: pointer;
+}
+
+.tick-select {
+  position: absolute;
+  top: 20px;
+  width: 42px;
+  height: 42px;
+  margin-left: 77px;
+  @include horizontal-center;
+  cursor: pointer;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.tck {
+  fill: #FFFFFF;
+}
+
+.tckfront {
+  fill: #8E8E8E;
+}
+
+/* /////////////////////////////////////////////// ccccccc screen //////// */
+
+#c-screen {
+  background-color: #000;
+  background-repeat: repeat-x;
+  background-image: url("../images/picado-c.svg");
+  background-position: center bottom;
+  background-size: 109px 40px;
+}
+
+
+/* /////////////////////////////////////////////// dddddddddd screen //////// */
+
+#d-screen {
+  background-color: #00abad;
+  background-repeat: repeat-x;
+  background-image: url("../images/picado-d.svg");
+  background-position: center bottom;
+  background-size: 109px 40px;
+}
+
+
+
+.calavera-nombre {
+  overflow: hidden;
+
+  img {
+    width: 180px;
+  }
+}
+
+input {
+  text-align: center;
+
+}
+
+#inputusername{
+  margin-bottom: 0 !important;
+}
+
+input[type="text"] {
+  font-size: 1.5rem;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  color: #000000;
+  background-color: #f0e9c7;
+  border: 0;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+input:focus[type="text"] {
+  color: #000000;
+  background-color: #f0e9c7;
+  border: 0;
+}
+
+
+
+
+.guardar-btn, .hazotra-btn {
+  font-size: 1.3rem;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  border-radius: 15px;
+  padding: 7px 18px;
+}
+
+.guardar-btn:hover{
+  color: #f0e9c7;
+}
+.hazotra-btn:hover{
+  color: #f0e9c7;
+}
+
+.guardar-btn:focus {
+  background-color: #f0e9c7;
+  color: #000;
+}
+
+.hazotra-btn:focus {
+  background-color: #f0e9c7;
+  color: #000;
+}
+
+#calavera-nombre-canvas {
+  width: 100%;
+  height: auto;
+}
+
+.renderName {
+  position: absolute;
+  @include horizontal-center;
+  top: 32px;
+  p {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'american';
+    font-size: .7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+/* /////////////////////////////////////////////// eeeeeeeee screen //////// */
+
+#e-screen {
+  background-color: #993399;
+
+  .margin-less-comp {
+    margin-top: -30px;
+  }
+
+  .calaverizzimas-logo img {
+    /*width: 240px;*/
+  }
+}
+
+.canvas-container {
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+#myCanvas {
+  width: 100%;
+  height: auto;
+}
+
+
+.share-options{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+}
+
+/* /////////////////////////////////////////////// ffffffff screen //////// */
+
+#f-screen {
+  background-color: #993399;
+}
+
+.izzi-logo-circle-footer {
+  position: absolute;
+  bottom: 80px;
+  z-index: 1;
+
+  img {
+    width: 180px;
+  }
+}
+
+.footer-legal {
+  background-color: #820e68;
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  p {
+    margin-top: 18px;
+    font-size: .8rem;
+    /*@include absolute-center;*/
+  }
+}
+
+.footer-content {
+  height: 180px;
+}
+
+
+.preloader-wrapper{
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 999;
+
+  .preloader-backcolor{
+    background-color: #ff00c6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .preloader-gif{
+    @include absolute-center;
+  }
+}
+
+.preloader-message{
+  display: none;
+}
+
